@@ -91,3 +91,8 @@ vendor/firmware/tzsecuredata.mdt
 
 # WLAN
 vendor/etc/wifi/wifi_txpower.conf
+
+# Display
+# The QDCM calibration for this panel.  The common list comes from
+# sm8250-common, which carries every panel but this one.
+vendor/etc/qdcm_calib_data_pdx213_amoled_fhd+_command_mode_dsi_SEC_panel.xml
