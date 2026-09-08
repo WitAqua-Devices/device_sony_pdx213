@@ -9,6 +9,14 @@ LOCAL_PATH := device/sony/pdx213
 TARGET_SCREEN_HEIGHT := 2520
 TARGET_SCREEN_WIDTH := 1080
 
+# Device info
+# Three physical rear sensors: imx486 wide, s5k4h7yx ultra wide and ov8856
+# tele.  Left to the camera HAL these would be counted along with the two
+# logical cameras built on the wide sensor, and the list would read
+# 12 + 8 + 8 + 12 + 12.
+CAMERA_REAR_INFO := 12,8,8
+CAMERA_FRONT_INFO := 8
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
