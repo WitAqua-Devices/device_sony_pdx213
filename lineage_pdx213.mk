@@ -27,3 +27,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=XQ-BT44 \
     SystemDevice=XQ-BT44 \
     SystemName=XQ-BT44
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildVariant=userdebug
