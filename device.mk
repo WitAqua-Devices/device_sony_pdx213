@@ -14,6 +14,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworkRes-PDX213-Overlay \
     SystemUIRes-PDX213-Overlay
 
 PRODUCT_SOONG_NAMESPACES += \

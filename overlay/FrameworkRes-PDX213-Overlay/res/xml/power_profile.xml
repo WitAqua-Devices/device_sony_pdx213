@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!--
+     Only the values that can be read off this hardware are set here.
+
+     frameworks/base/core/res/res/xml/power_profile.xml defaults
+     battery.capacity to 1000, which is what "Device info" showed, and the
+     stock framework-res.apk is no help - Sony ships the AOSP file
+     unmodified, every component at the 0.1 placeholder and a single CPU
+     cluster.
+
+     The per-component draw (screen, wifi, radio, audio, video, camera) and
+     the per-OPP cpu.core_power arrays are deliberately left at the
+     framework defaults.  They have to be measured on the hardware, and
+     pdx225's cannot be borrowed: that device has 16 operating points per
+     cluster against this one's 9 and 10, so its arrays do not even line up.
+     Guessed numbers would look calibrated without being so.
+-->
+<device name="Android">
+    <!--
+         The rated capacity of the XQ-BT44 cell.
+
+         Not the 4529 that qg-batterydata-pdx213-tdk-4450mv.dtsi carries in
+         somc,initial-capacity-uah, and that the fuel gauge repeats as the
+         charge counter at full: that is what the gauge models for the
+         4450mV profile, not what the cell is sold as.
+    -->
+    <item name="battery.capacity">4500</item>
+
+    <!-- Snapdragon 690 5G: 6x Kryo 560 Silver (A55) + 2x Kryo 560 Gold (A77) -->
+    <array name="cpu.clusters.cores">
+        <value>6</value>
+        <value>2</value>
+    </array>
+
+    <!-- scaling_available_frequencies, cpu0.  1.7GHz Silver. -->
+    <array name="cpu.core_speeds.cluster0">
+        <value>300000</value>
+        <value>576000</value>
+        <value>768000</value>
+        <value>1017600</value>
+        <value>1248000</value>
+        <value>1324800</value>
+        <value>1516800</value>
+        <value>1612800</value>
+        <value>1708800</value>
+    </array>
+
+    <!-- scaling_available_frequencies, cpu6.  2.0GHz Gold. -->
+    <array name="cpu.core_speeds.cluster1">
+        <value>300000</value>
+        <value>787200</value>
+        <value>979200</value>
+        <value>1036800</value>
+        <value>1248000</value>
+        <value>1401600</value>
+        <value>1555200</value>
+        <value>1766400</value>
+        <value>1900800</value>
+        <value>2073600</value>
+    </array>
+</device>
