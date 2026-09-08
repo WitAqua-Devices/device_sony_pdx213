@@ -1,0 +1,8 @@
+# The device specific half of the stock vendor/build.prop.  Anything shared
+# across the SoC lives in device/sony/sm6350-common/vendor.prop.
+
+# Product name Sony's IDD crash reporter identifies itself with
+vendor.idd.product.name=pdx213
+
+# Widevine L1 certification revision, kept at the stock value
+ro.netflix.bsp_rev=Q7250-19133-1

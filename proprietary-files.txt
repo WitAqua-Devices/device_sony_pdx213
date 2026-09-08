@@ -1,0 +1,44 @@
+# Proprietary files for pdx213 (Sony Xperia 10 III)
+#
+# Taken from the stock XQ-BT44 62.1.A.1.431 firmware
+#
+
+# Input
+vendor/usr/idc/sec_touchscreen.idc
+
+# Audio FX Modules
+vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_FrontCHICam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_NoCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_SWideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_TeleCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_WideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_44k_defaultCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_ComboCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_FrontCHICam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_NoCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_SWideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_TeleCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_WideCam.tbl
+vendor/etc/zoom_noise_reduction/znr_48k_defaultCam.tbl
+vendor/etc/zoom_noise_reduction/znr_parameter.xml
+
+# Firmware
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a620_zap.b00
+vendor/firmware/a620_zap.b01
+vendor/firmware/a620_zap.b02
+vendor/firmware/a620_zap.elf
+vendor/firmware/a620_zap.mdt
+vendor/firmware/tzsecuredata.b00
+vendor/firmware/tzsecuredata.b01
+vendor/firmware/tzsecuredata.b02
+vendor/firmware/tzsecuredata.b03
+vendor/firmware/tzsecuredata.b04
+vendor/firmware/tzsecuredata.b05
+vendor/firmware/tzsecuredata.b06
+vendor/firmware/tzsecuredata.b07
+vendor/firmware/tzsecuredata.mdt
+
+# WLAN
+vendor/etc/wifi/wifi_txpower.conf

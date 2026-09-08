@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "device_sony_sm6350-common",
+    "target_path": "device/sony/sm6350-common"
+  }
+]
