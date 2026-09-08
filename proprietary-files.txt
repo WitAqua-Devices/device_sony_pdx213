@@ -3,6 +3,13 @@
 # Taken from the stock XQ-BT44 62.1.A.1.431 firmware
 #
 
+# Fingerprint
+# The Egistec HIDL wrapper this depends on is deliberately not listed: the
+# stock one was built against the Android 11 libhidlbase and cannot register
+# its service.  Leaving it out lets soong resolve the dependency to the
+# hidl_interface from hardware/sony/interfaces, the way pdx225 does.
+vendor/lib64/hw/fingerprint.default.so;DISABLE_CHECKELF
+
 # Input
 vendor/usr/idc/sec_touchscreen.idc
 

@@ -6,3 +6,13 @@ vendor.idd.product.name=pdx213
 
 # Widevine L1 certification revision, kept at the stock value
 ro.netflix.bsp_rev=Q7250-19133-1
+
+# The sensor is in the power key.  The Lineage AIDL fingerprint HAL aborts on
+# startup unless this names a behaviour it knows, and the device then never
+# finishes booting.
+persist.vendor.fingerprint.type=side
+
+# Where it is, as x|y|radius|display in pixels, which is what places the
+# enrolment guide.  x is the full panel width since the sensor is on the right
+# edge; the display id is this panel's.
+persist.vendor.fingerprint.sensor_location=1080|1051|240|local:4630946820763759745

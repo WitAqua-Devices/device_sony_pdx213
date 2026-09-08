@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Where the fingerprint sensor sits, in natural orientation pixels.  The
+         sensor is in the power key on the right edge, so x is past the right
+         side of the 1080px wide panel and only y places the indicator.
+         Without these, SystemUI falls back to the horizontal centre of the
+         screen at 610px and points at the wrong place entirely. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1920px</dimen>
+
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1151.0px</dimen>
+</resources>
