@@ -3,6 +3,48 @@
 # Taken from the stock XQ-BT44 62.1.A.1.431 firmware
 #
 
+# Camera
+# CamX enumerates the sensors from com.qti.sensormodule.<name>.bin, so without
+# these dumpsys media.camera reports no cameras at all.
+vendor/lib64/camera/com.qti.sensor.imx486_wide.so
+vendor/lib64/camera/com.qti.sensor.ov8856_tele.so
+vendor/lib64/camera/com.qti.sensor.s5k4h7yx_front.so
+vendor/lib64/camera/com.qti.sensor.s5k4h7yx_uwide.so
+vendor/lib64/camera/com.qti.sensormodule.imx486_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.ov8856_tele.bin
+vendor/lib64/camera/com.qti.sensormodule.s5k4h7yx_front.bin
+vendor/lib64/camera/com.qti.sensormodule.s5k4h7yx_uwide.bin
+vendor/lib64/camera/com.qti.tuned.imx486_wide.bin
+vendor/lib64/camera/com.qti.tuned.ov8856_tele.bin
+vendor/lib64/camera/com.qti.tuned.s5k4h7yx_front.bin
+vendor/lib64/camera/com.qti.tuned.s5k4h7yx_uwide.bin
+# The distortion map libarcsoft_distortion_correction.so reads for the ultra
+# wide sensor.  Without it ASDC_InitMap rejects the path and the ArcSoft
+# distortion correction stage of com.qti.node.assfprocess never initializes.
+vendor/etc/CalibrationSample-UW.bin
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
+vendor/lib64/camera/components/com.morpho.node.moviesolid.so
+vendor/lib64/camera/components/com.qti.node.asaisd.so
+vendor/lib64/camera/components/com.qti.node.ascd.so
+vendor/lib64/camera/components/com.qti.node.asot.so
+vendor/lib64/camera/components/com.qti.node.assfprocess.so
+vendor/lib64/camera/components/com.qti.node.capturebokeh.so
+vendor/lib64/camera/components/com.qti.node.realtimebokeh.so
+vendor/lib64/libarcimageprocess.so
+vendor/lib64/libarcsoft_aiscenedetection.so
+vendor/lib64/libarcsoft_antishaking.so
+vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarcsoft_condition_detection.so
+vendor/lib64/libarcsoft_distortion_correction.so
+vendor/lib64/libarcsoft_dualcam_refocus.so
+vendor/lib64/libarcsoft_motiondetection.so
+vendor/lib64/libarcsoft_night_hawk.so
+vendor/lib64/libarcsoft_object_tracking.so
+vendor/lib64/libarcsoft_rer.so
+vendor/lib64/libarcsoft_smart_denoise.so
+vendor/lib64/libsomc_chokoballpal.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
+
 # Fingerprint
 # The Egistec HIDL wrapper this depends on is deliberately not listed: the
 # stock one was built against the Android 11 libhidlbase and cannot register
